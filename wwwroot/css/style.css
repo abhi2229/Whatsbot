@@ -1,0 +1,235 @@
+﻿/* Add some animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animations to chat messages */
+.chatbot-message, .user-message {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Add some hover effects to buttons */
+#submit-button:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.5);
+}
+
+#submit-button:active {
+    transform: scale(0.95);
+}
+
+/* Additional styling for chatbot container */
+body {
+    background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Chatbot container */
+.chatbot-container {
+    width: 500px;
+    margin: 50px auto;
+    background-color: #f8f8f8;
+    border: 1px solid #cccccc;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header */
+#header {
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/* Conversation container */
+#conversation {
+    height: 300px;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+/* Chatbot message */
+.chatbot-message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+/* User message */
+.user-message {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+    justify-content: flex-end;
+}
+
+/* Message text */
+.chatbot-text, .user-text {
+    max-width: 80%;
+    padding: 15px;
+    border-radius: 20px;
+    word-wrap: break-word;
+}
+
+.chatbot-text {
+    background-color: #e0e0e0;
+    color: #333333;
+}
+
+.user-text {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+/* Input form */
+#input-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-top: 1px solid #cccccc;
+    background-color: #ffffff;
+}
+
+/* Input field */
+#input-field {
+    flex: 0;
+    height: 40px;
+    width: 350px;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    padding: 0 15px;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Send button */
+#submit-button {
+    width: 60px;
+    height: 55px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    border-radius: 4px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #999999;
+    }
+/* Dark mode */
+body.dark-mode {
+    background: #333333;
+    color: #ffffff;
+}
+
+/* Dark mode for chatbot container */
+.chatbot-container.dark-mode {
+    background-color: #444444;
+    border-color: #666666;
+}
+
+/* Dark mode for header */
+#header.dark-mode {
+    background-color: #55aaff;
+    color: #ffffff;
+}
+
+/* Dark mode for conversation container */
+#conversation.dark-mode {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+/* Dark mode for chatbot message */
+.chatbot-message.dark-mode .chatbot-text {
+    background-color: #666666;
+    color: #ffffff;
+}
+
+/* Dark mode for user message */
+.user-message.dark-mode .user-text {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+/* Dark mode for input form */
+#input-form.dark-mode {
+    background-color: #666666;
+}
+
+/* Dark mode for input field */
+#input-field.dark-mode {
+    border-color: #888888;
+    background-color: #777777;
+    color: #ffffff;
+}
+
+/* Dark mode for send button */
+#submit-button.dark-mode {
+    background-color: #55aaff;
+    color: #ffffff;
+}
+
+/* Dark mode for scrollbar */
+::-webkit-scrollbar.dark-mode {
+    background-color: #444444;
+}
+
+::-webkit-scrollbar-thumb.dark-mode {
+    background-color: #888888;
+}
+
+    ::-webkit-scrollbar-thumb.dark-mode:hover {
+        background-color: #aaaaaa;
+    }
+.dark-mode-button {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    .dark-mode-button:hover {
+        background-color: #45a049;
+        box-shadow: 0 4px 8px rgba(0, 128, 0, 0.5);
+    }
+
+    .dark-mode-button:active {
+        transform: scale(0.95);
+    }

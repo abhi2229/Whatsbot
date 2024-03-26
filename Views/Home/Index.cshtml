@@ -1,0 +1,42 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsbot</title>
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+   
+    <br>
+    <button id="toggle-dark-mode" class="dark-mode-button">Dark Mode</button>
+    <div class="chatbot-container">
+        <div id="header">
+            <h1>Whatsbot</h1>
+        </div>
+        <div id="chatbot">
+            <div id="conversation">
+                <div class="chatbot-message">
+                    <p class="chatbot-text">Hi! Welcome to Whatsbot :) 🤖</p>
+                </div>
+            </div>
+            <form id="input-form">
+                <div id="message-container">
+                    <input id="input-field" type="text" placeholder="Type your message here">
+                    <button id="submit-button" type="submit">
+                        <img class="send-icon" src="~/img/send-message.png" alt="">
+                    </button>
+                </div>
+            
+            </form>
+        </div>
+    </div>
+
+    <script src="~/js/chatbot.js"></script>
+</body>
+</html>
